@@ -54,7 +54,7 @@ const NewTransactionForm = () => {
       id: uuidv4(),
     });
     setFormData(initialState);
-  }, []);
+  }, [addTransaction, formData]);
 
   useEffect(() => {
     if (segment) {
